@@ -1,0 +1,379 @@
+./2ls --graphml-witness witness.graphml --32 --propertyfile ../sv-benchmarks/c/properties/unreach-call.prp ../sv-benchmarks/c/recursive/recHanoi01.c
+
+
+--------------------------------------------------------------------------------
+
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_MEASUREMENT = "en_GB.UTF-8",
+	LC_PAPER = "en_GB.UTF-8",
+	LC_MONETARY = "en_GB.UTF-8",
+	LC_NAME = "en_GB.UTF-8",
+	LC_ADDRESS = "en_GB.UTF-8",
+	LC_NUMERIC = "en_GB.UTF-8",
+	LC_TELEPHONE = "en_GB.UTF-8",
+	LC_IDENTIFICATION = "en_GB.UTF-8",
+	LC_TIME = "en_GB.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+2LS version 0.7.1 (based on CBMC 5.6)
+Reading GOTO program from file
+Adding CPROVER library
+Function Pointer Removal
+Generic Property Instrumentation
+Constant Propagation
+Context-sensitive analysis from _start
+Using intervals domain with binary search solver
+Computing SSA of main
+Simplifying
+Computing SSA of _start
+Simplifying
+Computing SSA of hanoi
+Simplifying
+Computing SSA of __CPROVER_initialize
+Simplifying
+Computing SSA of applyHanoi
+Simplifying
+
+Summarizing function _start
+Checking precondition of __CPROVER_initialize
+Function __CPROVER_initialize not analyzed yet
+Computing calling context for function __CPROVER_initialize
+Recursively summarizing function __CPROVER_initialize
+Analyzing function __CPROVER_initialize
+Computing summary
+
+Summary for function __CPROVER_initialize
+params: 
+globals_in: __CPROVER_threads_exited __CPROVER_malloc_is_new_array __CPROVER_dead_object'obj __CPROVER_deallocated'obj __CPROVER_malloc_object'obj __CPROVER_memory_leak'obj __CPROVER_dead_object __CPROVER_deallocated __CPROVER_malloc_object __CPROVER_memory_leak __CPROVER_rounding_mode counter __CPROVER_malloc_size __CPROVER_next_thread_id __CPROVER_pipe_count __CPROVER_thread_id 
+globals_out: __CPROVER_threads_exited#51 __CPROVER_malloc_is_new_array#43 __CPROVER_dead_object'obj __CPROVER_deallocated'obj __CPROVER_malloc_object'obj __CPROVER_memory_leak'obj __CPROVER_dead_object#41 __CPROVER_deallocated#42 __CPROVER_malloc_object#44 __CPROVER_memory_leak#46 __CPROVER_rounding_mode#49 counter#52 __CPROVER_malloc_size#45 __CPROVER_next_thread_id#47 __CPROVER_pipe_count#48 __CPROVER_thread_id#50 
+forward precondition: TRUE
+forward transformer: __CPROVER_rounding_mode#49 <= 0 && -((signed __CPROVER_bitvector[33])__CPROVER_rounding_mode#49) <= 0 && counter#52 <= 0 && -((signed __CPROVER_bitvector[33])counter#52) <= 0 && __CPROVER_malloc_size#45 <= 0u && -((signed __CPROVER_bitvector[33])__CPROVER_malloc_size#45) <= 0 && __CPROVER_next_thread_id#47 <= 0ul && -((signed __CPROVER_bitvector[33])__CPROVER_next_thread_id#47) <= 0 && __CPROVER_pipe_count#48 <= 0u && -((signed __CPROVER_bitvector[33])__CPROVER_pipe_count#48) <= 0 && __CPROVER_thread_id#50 <= 0ul && -((signed __CPROVER_bitvector[33])__CPROVER_thread_id#50) <= 0
+forward invariant: TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking precondition of main
+Function main not analyzed yet
+Computing calling context for function main
+Recursively summarizing function main
+<refinement-iteration>1</refinement-iteration>
+
+Checking precondition of applyHanoi
+Function applyHanoi not analyzed yet
+Computing calling context for function applyHanoi
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+Recursively summarizing function applyHanoi
+Function applyHanoi is recursive
+Analyzing function applyHanoi
+Computing summary
+------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+Summary for function applyHanoi
+params: n from to via 
+globals_in: counter 
+globals_out: counter#phi58 
+forward precondition: counter <= 0 && -((signed __CPROVER_bitvector[33])counter) <= 0 && n <= 31 && -((signed __CPROVER_bitvector[33])n) <= -1 && from <= 1 && -((signed __CPROVER_bitvector[33])from) <= -1 && to <= 3 && -((signed __CPROVER_bitvector[33])to) <= -3 && via <= 2 && -((signed __CPROVER_bitvector[33])via) <= -2
+forward transformer: counter <= 0 && -((signed __CPROVER_bitvector[33])counter) <= 0 && n <= 31 && -((signed __CPROVER_bitvector[33])n) <= -1 && from <= 1 && -((signed __CPROVER_bitvector[33])from) <= -1 && to <= 3 && -((signed __CPROVER_bitvector[33])to) <= -3 && via <= 2 && -((signed __CPROVER_bitvector[33])via) <= -2 ==> (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])n) - (signed __CPROVER_bitvector[34])counter#phi58 <= 0 && (signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])counter#phi58 <= 0 && (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])from) - (signed __CPROVER_bitvector[34])counter#phi58 <= -1 && (signed __CPROVER_bitvector[33])from + (signed __CPROVER_bitvector[33])counter#phi58 <= 3 && (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])to) - (signed __CPROVER_bitvector[34])counter#phi58 <= -1 && (signed __CPROVER_bitvector[33])to + (signed __CPROVER_bitvector[33])counter#phi58 <= 3 && (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])via) - (signed __CPROVER_bitvector[34])counter#phi58 <= -1 && (signed __CPROVER_bitvector[33])via + (signed __CPROVER_bitvector[33])counter#phi58 <= 3 && (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])counter) - (signed __CPROVER_bitvector[34])counter#phi58 <= 0 && (signed __CPROVER_bitvector[33])counter + (signed __CPROVER_bitvector[33])counter#phi58 <= 0 && (signed __CPROVER_bitvector[33])n - (signed __CPROVER_bitvector[33])counter#phi58 <= 0 && (signed __CPROVER_bitvector[33])counter#phi58 - (signed __CPROVER_bitvector[33])n <= 0 && (signed __CPROVER_bitvector[33])from - (signed __CPROVER_bitvector[33])counter#phi58 <= 3 && (signed __CPROVER_bitvector[33])counter#phi58 - (signed __CPROVER_bitvector[33])from <= -1 && (signed __CPROVER_bitvector[33])to - (signed __CPROVER_bitvector[33])counter#phi58 <= 3 && (signed __CPROVER_bitvector[33])counter#phi58 - (signed __CPROVER_bitvector[33])to <= -1 && (signed __CPROVER_bitvector[33])via - (signed __CPROVER_bitvector[33])counter#phi58 <= 3 && (signed __CPROVER_bitvector[33])counter#phi58 - (signed __CPROVER_bitvector[33])via <= -1 && (signed __CPROVER_bitvector[33])counter - (signed __CPROVER_bitvector[33])counter#phi58 <= 0 && (signed __CPROVER_bitvector[33])counter#phi58 - (signed __CPROVER_bitvector[33])counter <= 0 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])from) - (signed __CPROVER_bitvector[34])counter#phi58 <= 3 && (signed __CPROVER_bitvector[34])counter#phi58 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])from) <= -1 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])to) - (signed __CPROVER_bitvector[34])counter#phi58 <= 3 && (signed __CPROVER_bitvector[34])counter#phi58 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])to) <= -1 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])via) - (signed __CPROVER_bitvector[34])counter#phi58 <= 3 && (signed __CPROVER_bitvector[34])counter#phi58 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])via) <= -1 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])counter) - (signed __CPROVER_bitvector[34])counter#phi58 <= 0 && (signed __CPROVER_bitvector[34])counter#phi58 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])counter) <= 0 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])from + (signed __CPROVER_bitvector[33])to) - (signed __CPROVER_bitvector[34])counter#phi58 <= 5 && (signed __CPROVER_bitvector[34])counter#phi58 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])from + (signed __CPROVER_bitvector[33])to) <= -3 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])from + (signed __CPROVER_bitvector[33])via) - (signed __CPROVER_bitvector[34])counter#phi58 <= 5 && (signed __CPROVER_bitvector[34])counter#phi58 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])from + (signed __CPROVER_bitvector[33])via) <= -3 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])from + (signed __CPROVER_bitvector[33])counter) - (signed __CPROVER_bitvector[34])counter#phi58 <= 3 && (signed __CPROVER_bitvector[34])counter#phi58 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])from + (signed __CPROVER_bitvector[33])counter) <= -1 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])to + (signed __CPROVER_bitvector[33])via) - (signed __CPROVER_bitvector[34])counter#phi58 <= 5 && (signed __CPROVER_bitvector[34])counter#phi58 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])to + (signed __CPROVER_bitvector[33])via) <= -3 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])to + (signed __CPROVER_bitvector[33])counter) - (signed __CPROVER_bitvector[34])counter#phi58 <= 3 && (signed __CPROVER_bitvector[34])counter#phi58 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])to + (signed __CPROVER_bitvector[33])counter) <= -1 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])via + (signed __CPROVER_bitvector[33])counter) - (signed __CPROVER_bitvector[34])counter#phi58 <= 3 && (signed __CPROVER_bitvector[34])counter#phi58 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])via + (signed __CPROVER_bitvector[33])counter) <= -1
+forward invariant: counter <= 0 && -((signed __CPROVER_bitvector[33])counter) <= 0 && n <= 31 && -((signed __CPROVER_bitvector[33])n) <= -1 && from <= 1 && -((signed __CPROVER_bitvector[33])from) <= -1 && to <= 3 && -((signed __CPROVER_bitvector[33])to) <= -3 && via <= 2 && -((signed __CPROVER_bitvector[33])via) <= -2 ==> TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+<refinement-iteration>1</refinement-iteration>
+
+Analyzing function main
+Computing summary
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+
+Summary for function main
+params: 
+globals_in: counter 
+globals_out: counter#phi24 main#return_value#phi24 
+forward precondition: TRUE
+forward transformer: counter#phi24 <= 2147483647 && -((signed __CPROVER_bitvector[33])counter#phi24) <= 2147483648 && main#return_value#phi24 <= 0 && -((signed __CPROVER_bitvector[33])main#return_value#phi24) <= 0
+forward invariant: TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Analyzing function _start
+Computing summary
+
+Summary for function _start
+params: 
+globals_in: 
+globals_out: 
+forward precondition: TRUE
+forward transformer: TRUE
+forward invariant: TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking properties of main
+<refinement-iteration>1</refinement-iteration>
+
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+<refinement-iteration>1</refinement-iteration>
+
+Checking properties of _start
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking properties of hanoi
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking properties of __CPROVER_initialize
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking properties of applyHanoi
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+** statistics: 
+  number of solver instances: 5
+  number of solver calls: 765
+  number of summaries used: 3
+  number of termination arguments computed: 0
+
+[main.assertion.1] : OK
+
+** 0 of 1 unknown
+** 0 of 1 failed
+VERIFICATION SUCCESSFUL
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_MEASUREMENT = "en_GB.UTF-8",
+	LC_PAPER = "en_GB.UTF-8",
+	LC_MONETARY = "en_GB.UTF-8",
+	LC_NAME = "en_GB.UTF-8",
+	LC_ADDRESS = "en_GB.UTF-8",
+	LC_NUMERIC = "en_GB.UTF-8",
+	LC_TELEPHONE = "en_GB.UTF-8",
+	LC_IDENTIFICATION = "en_GB.UTF-8",
+	LC_TIME = "en_GB.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+TRUE

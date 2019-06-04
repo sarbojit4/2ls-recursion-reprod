@@ -1,0 +1,22 @@
+./2ls --graphml-witness witness.graphml --32 --propertyfile ../sv-benchmarks/c/properties/unreach-call.prp ../sv-benchmarks/c/recursive/EvenOdd03.c
+
+
+--------------------------------------------------------------------------------
+
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_MEASUREMENT = "en_GB.UTF-8",
+	LC_PAPER = "en_GB.UTF-8",
+	LC_MONETARY = "en_GB.UTF-8",
+	LC_NAME = "en_GB.UTF-8",
+	LC_ADDRESS = "en_GB.UTF-8",
+	LC_NUMERIC = "en_GB.UTF-8",
+	LC_TELEPHONE = "en_GB.UTF-8",
+	LC_IDENTIFICATION = "en_GB.UTF-8",
+	LC_TIME = "en_GB.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").

@@ -1,0 +1,526 @@
+./2ls --graphml-witness witness.graphml --32 --propertyfile ../sv-benchmarks/c/properties/unreach-call.prp ../sv-benchmarks/c/recursive/Primes.c
+
+
+--------------------------------------------------------------------------------
+
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_MEASUREMENT = "en_GB.UTF-8",
+	LC_PAPER = "en_GB.UTF-8",
+	LC_MONETARY = "en_GB.UTF-8",
+	LC_NAME = "en_GB.UTF-8",
+	LC_ADDRESS = "en_GB.UTF-8",
+	LC_NUMERIC = "en_GB.UTF-8",
+	LC_TELEPHONE = "en_GB.UTF-8",
+	LC_IDENTIFICATION = "en_GB.UTF-8",
+	LC_TIME = "en_GB.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+2LS version 0.7.1 (based on CBMC 5.6)
+Reading GOTO program from file
+Adding CPROVER library
+Function Pointer Removal
+Generic Property Instrumentation
+Constant Propagation
+Context-sensitive analysis from _start
+Using intervals domain with binary search solver
+Computing SSA of main
+Simplifying
+Computing SSA of _start
+Simplifying
+Computing SSA of is_prime
+Simplifying
+Computing SSA of is_prime_
+Simplifying
+Computing SSA of mult
+Simplifying
+Computing SSA of __CPROVER_initialize
+Simplifying
+Computing SSA of multiple_of
+Simplifying
+
+Summarizing function _start
+Checking precondition of __CPROVER_initialize
+Function __CPROVER_initialize not analyzed yet
+Computing calling context for function __CPROVER_initialize
+Recursively summarizing function __CPROVER_initialize
+Analyzing function __CPROVER_initialize
+Computing summary
+
+Summary for function __CPROVER_initialize
+params: 
+globals_in: __CPROVER_threads_exited __CPROVER_malloc_is_new_array __CPROVER_dead_object'obj __CPROVER_deallocated'obj __CPROVER_malloc_object'obj __CPROVER_memory_leak'obj __CPROVER_dead_object __CPROVER_deallocated __CPROVER_malloc_object __CPROVER_memory_leak __CPROVER_rounding_mode __CPROVER_malloc_size __CPROVER_next_thread_id __CPROVER_pipe_count __CPROVER_thread_id 
+globals_out: __CPROVER_threads_exited#127 __CPROVER_malloc_is_new_array#119 __CPROVER_dead_object'obj __CPROVER_deallocated'obj __CPROVER_malloc_object'obj __CPROVER_memory_leak'obj __CPROVER_dead_object#117 __CPROVER_deallocated#118 __CPROVER_malloc_object#120 __CPROVER_memory_leak#122 __CPROVER_rounding_mode#125 __CPROVER_malloc_size#121 __CPROVER_next_thread_id#123 __CPROVER_pipe_count#124 __CPROVER_thread_id#126 
+forward precondition: TRUE
+forward transformer: __CPROVER_rounding_mode#125 <= 0 && -((signed __CPROVER_bitvector[33])__CPROVER_rounding_mode#125) <= 0 && __CPROVER_malloc_size#121 <= 0u && -((signed __CPROVER_bitvector[33])__CPROVER_malloc_size#121) <= 0 && __CPROVER_next_thread_id#123 <= 0ul && -((signed __CPROVER_bitvector[33])__CPROVER_next_thread_id#123) <= 0 && __CPROVER_pipe_count#124 <= 0u && -((signed __CPROVER_bitvector[33])__CPROVER_pipe_count#124) <= 0 && __CPROVER_thread_id#126 <= 0ul && -((signed __CPROVER_bitvector[33])__CPROVER_thread_id#126) <= 0
+forward invariant: TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking precondition of main
+Function main not analyzed yet
+Computing calling context for function main
+Recursively summarizing function main
+<refinement-iteration>1</refinement-iteration>
+
+Checking precondition of is_prime
+Function is_prime not analyzed yet
+Computing calling context for function is_prime
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+Recursively summarizing function is_prime
+Checking precondition of is_prime_
+Function is_prime_ not analyzed yet
+Computing calling context for function is_prime_
+Recursively summarizing function is_prime_
+Function is_prime_ is recursive
+Checking precondition of multiple_of
+Function multiple_of not analyzed yet
+Computing calling context for function multiple_of
+Recursively summarizing function multiple_of
+Function multiple_of is recursive
+Analyzing function multiple_of
+Computing summary
+------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+Summary for function multiple_of
+params: n m 
+globals_in: 
+globals_out: multiple_of#return_value#phi157 
+forward precondition: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -3 && m <= 46339 && -((signed __CPROVER_bitvector[33])m) <= -2
+forward transformer: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -3 && m <= 46339 && -((signed __CPROVER_bitvector[33])m) <= -2 ==> (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])n) - (signed __CPROVER_bitvector[34])multiple_of#return_value#phi157 <= 46337 && (signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])multiple_of#return_value#phi157 <= 92678 && (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])m) - (signed __CPROVER_bitvector[34])multiple_of#return_value#phi157 <= 46334 && (signed __CPROVER_bitvector[33])m + (signed __CPROVER_bitvector[33])multiple_of#return_value#phi157 <= 46340 && (signed __CPROVER_bitvector[33])n - (signed __CPROVER_bitvector[33])multiple_of#return_value#phi157 <= 92676 && (signed __CPROVER_bitvector[33])multiple_of#return_value#phi157 - (signed __CPROVER_bitvector[33])n <= 46339 && (signed __CPROVER_bitvector[33])m - (signed __CPROVER_bitvector[33])multiple_of#return_value#phi157 <= 46338 && (signed __CPROVER_bitvector[33])multiple_of#return_value#phi157 - (signed __CPROVER_bitvector[33])m <= 46336 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])m) - (signed __CPROVER_bitvector[34])multiple_of#return_value#phi157 <= 92678 && (signed __CPROVER_bitvector[34])multiple_of#return_value#phi157 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])m) <= 46337
+forward invariant: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -3 && m <= 46339 && -((signed __CPROVER_bitvector[33])m) <= -2 ==> TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Analyzing function is_prime_
+Computing summary
+------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+Summary for function is_prime_
+params: n m 
+globals_in: 
+globals_out: is_prime_#return_value#phi94 
+forward precondition: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -1 && m <= 46339 && -((signed __CPROVER_bitvector[33])m) <= 0
+forward transformer: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -1 && m <= 46339 && -((signed __CPROVER_bitvector[33])m) <= 0 ==> (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])n) - (signed __CPROVER_bitvector[34])is_prime_#return_value#phi94 <= 2147483645 && (signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])is_prime_#return_value#phi94 <= 2147529987 && (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])m) - (signed __CPROVER_bitvector[34])is_prime_#return_value#phi94 <= 2147483646 && (signed __CPROVER_bitvector[33])m + (signed __CPROVER_bitvector[33])is_prime_#return_value#phi94 <= 2147529986 && (signed __CPROVER_bitvector[33])n - (signed __CPROVER_bitvector[33])is_prime_#return_value#phi94 <= 2147529988 && (signed __CPROVER_bitvector[33])is_prime_#return_value#phi94 - (signed __CPROVER_bitvector[33])n <= 2147483644 && (signed __CPROVER_bitvector[33])m - (signed __CPROVER_bitvector[33])is_prime_#return_value#phi94 <= 2147529987 && (signed __CPROVER_bitvector[33])is_prime_#return_value#phi94 - (signed __CPROVER_bitvector[33])m <= 2147483645 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])m) - (signed __CPROVER_bitvector[34])is_prime_#return_value#phi94 <= 2147576327 && (signed __CPROVER_bitvector[34])is_prime_#return_value#phi94 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])m) <= 2147483642
+forward invariant: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -1 && m <= 46339 && -((signed __CPROVER_bitvector[33])m) <= 0 ==> TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Analyzing function is_prime
+Computing summary
+
+Summary for function is_prime
+params: n 
+globals_in: 
+globals_out: is_prime#return_value#64 
+forward precondition: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -1
+forward transformer: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -1 ==> is_prime#return_value#64 <= 2147483647 && -((signed __CPROVER_bitvector[33])is_prime#return_value#64) <= 2147483648
+forward invariant: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -1 ==> TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+<refinement-iteration>1</refinement-iteration>
+
+Checking precondition of mult
+Function mult not analyzed yet
+Computing calling context for function mult
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+Recursively summarizing function mult
+Function mult is recursive
+Analyzing function mult
+Computing summary
+------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+Summary for function mult
+params: n m 
+globals_in: 
+globals_out: mult#return_value#phi115 
+forward precondition: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -1 && m <= 46340 && -((signed __CPROVER_bitvector[33])m) <= -1
+forward transformer: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -1 && m <= 46340 && -((signed __CPROVER_bitvector[33])m) <= -1 ==> (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])n) - (signed __CPROVER_bitvector[34])mult#return_value#phi115 <= -2 && (signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])mult#return_value#phi115 <= 46341 && (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])m) - (signed __CPROVER_bitvector[34])mult#return_value#phi115 <= -2 && (signed __CPROVER_bitvector[33])m + (signed __CPROVER_bitvector[33])mult#return_value#phi115 <= 2 && (signed __CPROVER_bitvector[33])n - (signed __CPROVER_bitvector[33])mult#return_value#phi115 <= 46339 && (signed __CPROVER_bitvector[33])mult#return_value#phi115 - (signed __CPROVER_bitvector[33])n <= 0 && (signed __CPROVER_bitvector[33])m - (signed __CPROVER_bitvector[33])mult#return_value#phi115 <= 0 && (signed __CPROVER_bitvector[33])mult#return_value#phi115 - (signed __CPROVER_bitvector[33])m <= 0 && (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])m) - (signed __CPROVER_bitvector[34])mult#return_value#phi115 <= 46340 && (signed __CPROVER_bitvector[34])mult#return_value#phi115 - (signed __CPROVER_bitvector[34])((signed __CPROVER_bitvector[33])n + (signed __CPROVER_bitvector[33])m) <= -1
+forward invariant: n <= 46340 && -((signed __CPROVER_bitvector[33])n) <= -1 && m <= 46340 && -((signed __CPROVER_bitvector[33])m) <= -1 ==> TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Analyzing function main
+Computing summary
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+<refinement-iteration>1</refinement-iteration>
+
+
+Summary for function main
+params: 
+globals_in: 
+globals_out: main#return_value#phi54 
+forward precondition: TRUE
+forward transformer: main#return_value#phi54 <= 0 && -((signed __CPROVER_bitvector[33])main#return_value#phi54) <= 0
+forward invariant: TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Analyzing function _start
+Computing summary
+
+Summary for function _start
+params: 
+globals_in: 
+globals_out: 
+forward precondition: TRUE
+forward transformer: TRUE
+forward invariant: TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking properties of main
+<refinement-iteration>1</refinement-iteration>
+
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+<refinement-iteration>1</refinement-iteration>
+
+Checking properties of _start
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking properties of is_prime
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking properties of is_prime_
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking properties of mult
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking properties of __CPROVER_initialize
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking properties of multiple_of
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+** statistics: 
+  number of solver instances: 7
+  number of solver calls: 2188
+  number of summaries used: 6
+  number of termination arguments computed: 0
+
+[main.assertion.1] : OK
+
+** 0 of 1 unknown
+** 0 of 1 failed
+VERIFICATION SUCCESSFUL
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_MEASUREMENT = "en_GB.UTF-8",
+	LC_PAPER = "en_GB.UTF-8",
+	LC_MONETARY = "en_GB.UTF-8",
+	LC_NAME = "en_GB.UTF-8",
+	LC_ADDRESS = "en_GB.UTF-8",
+	LC_NUMERIC = "en_GB.UTF-8",
+	LC_TELEPHONE = "en_GB.UTF-8",
+	LC_IDENTIFICATION = "en_GB.UTF-8",
+	LC_TIME = "en_GB.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+TRUE

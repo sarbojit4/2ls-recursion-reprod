@@ -1,0 +1,167 @@
+./2ls --graphml-witness witness.graphml --32 --propertyfile ../sv-benchmarks/c/properties/unreach-call.prp ../sv-benchmarks/c/recursive-simple/id_i10_o10-1.c
+
+
+--------------------------------------------------------------------------------
+
+
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_MEASUREMENT = "en_GB.UTF-8",
+	LC_PAPER = "en_GB.UTF-8",
+	LC_MONETARY = "en_GB.UTF-8",
+	LC_NAME = "en_GB.UTF-8",
+	LC_ADDRESS = "en_GB.UTF-8",
+	LC_NUMERIC = "en_GB.UTF-8",
+	LC_TELEPHONE = "en_GB.UTF-8",
+	LC_IDENTIFICATION = "en_GB.UTF-8",
+	LC_TIME = "en_GB.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+2LS version 0.7.1 (based on CBMC 5.6)
+Reading GOTO program from file
+Adding CPROVER library
+Function Pointer Removal
+Generic Property Instrumentation
+Constant Propagation
+Context-sensitive analysis from _start
+Using intervals domain with binary search solver
+Computing SSA of main
+Simplifying
+Computing SSA of _start
+Simplifying
+Computing SSA of __CPROVER_initialize
+Simplifying
+Computing SSA of id
+Simplifying
+
+Summarizing function _start
+Checking precondition of __CPROVER_initialize
+Function __CPROVER_initialize not analyzed yet
+Computing calling context for function __CPROVER_initialize
+Recursively summarizing function __CPROVER_initialize
+Analyzing function __CPROVER_initialize
+Computing summary
+
+Summary for function __CPROVER_initialize
+params: 
+globals_in: __CPROVER_threads_exited __CPROVER_malloc_is_new_array __CPROVER_dead_object'obj __CPROVER_deallocated'obj __CPROVER_malloc_object'obj __CPROVER_memory_leak'obj __CPROVER_dead_object __CPROVER_deallocated __CPROVER_malloc_object __CPROVER_memory_leak __CPROVER_rounding_mode __CPROVER_malloc_size __CPROVER_next_thread_id __CPROVER_pipe_count __CPROVER_thread_id 
+globals_out: __CPROVER_threads_exited#30 __CPROVER_malloc_is_new_array#22 __CPROVER_dead_object'obj __CPROVER_deallocated'obj __CPROVER_malloc_object'obj __CPROVER_memory_leak'obj __CPROVER_dead_object#20 __CPROVER_deallocated#21 __CPROVER_malloc_object#23 __CPROVER_memory_leak#25 __CPROVER_rounding_mode#28 __CPROVER_malloc_size#24 __CPROVER_next_thread_id#26 __CPROVER_pipe_count#27 __CPROVER_thread_id#29 
+forward precondition: TRUE
+forward transformer: __CPROVER_rounding_mode#28 <= 0 && -((signed __CPROVER_bitvector[33])__CPROVER_rounding_mode#28) <= 0 && __CPROVER_malloc_size#24 <= 0u && -((signed __CPROVER_bitvector[33])__CPROVER_malloc_size#24) <= 0 && __CPROVER_next_thread_id#26 <= 0ul && -((signed __CPROVER_bitvector[33])__CPROVER_next_thread_id#26) <= 0 && __CPROVER_pipe_count#27 <= 0u && -((signed __CPROVER_bitvector[33])__CPROVER_pipe_count#27) <= 0 && __CPROVER_thread_id#29 <= 0ul && -((signed __CPROVER_bitvector[33])__CPROVER_thread_id#29) <= 0
+forward invariant: TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking precondition of main
+Function main not analyzed yet
+Computing calling context for function main
+Recursively summarizing function main
+Checking precondition of id
+Function id not analyzed yet
+Computing calling context for function id
+Recursively summarizing function id
+Function id is recursive
+Analyzing function id
+Computing summary
+------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+Summary for function id
+params: x 
+globals_in: 
+globals_out: id#return_value#phi41 
+forward precondition: x <= 10 && -((signed __CPROVER_bitvector[33])x) <= -10
+forward transformer: x <= 10 && -((signed __CPROVER_bitvector[33])x) <= -10 ==> (signed __CPROVER_bitvector[34])-((signed __CPROVER_bitvector[33])x) - (signed __CPROVER_bitvector[34])id#return_value#phi41 <= 4294967296 && (signed __CPROVER_bitvector[33])x + (signed __CPROVER_bitvector[33])id#return_value#phi41 <= 4294967294 && (signed __CPROVER_bitvector[33])x - (signed __CPROVER_bitvector[33])id#return_value#phi41 <= 0 && (signed __CPROVER_bitvector[33])id#return_value#phi41 - (signed __CPROVER_bitvector[33])x <= 0
+forward invariant: x <= 10 && -((signed __CPROVER_bitvector[33])x) <= -10 ==> TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Analyzing function main
+Computing summary
+
+Summary for function main
+params: 
+globals_in: 
+globals_out: main#return_value#12 
+forward precondition: TRUE
+forward transformer: FALSE && FALSE
+forward invariant: TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Analyzing function _start
+Computing summary
+
+Summary for function _start
+params: 
+globals_in: 
+globals_out: 
+forward precondition: TRUE
+forward transformer: TRUE
+forward invariant: TRUE
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking properties of main
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking spuriousness:
+
+    Not spurious
+Checking properties of _start
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking properties of __CPROVER_initialize
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+Checking properties of id
+Loops fully unwound
+Running refinement loop with Glucose Syrup with simplifier
+** statistics: 
+  number of solver instances: 4
+  number of solver calls: 94
+  number of summaries used: 3
+  number of termination arguments computed: 0
+
+[main.assertion.1] : FAILURE
+
+** 0 of 1 unknown
+** 1 of 1 failed
+VERIFICATION FAILED
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_MEASUREMENT = "en_GB.UTF-8",
+	LC_PAPER = "en_GB.UTF-8",
+	LC_MONETARY = "en_GB.UTF-8",
+	LC_NAME = "en_GB.UTF-8",
+	LC_ADDRESS = "en_GB.UTF-8",
+	LC_NUMERIC = "en_GB.UTF-8",
+	LC_TELEPHONE = "en_GB.UTF-8",
+	LC_IDENTIFICATION = "en_GB.UTF-8",
+	LC_TIME = "en_GB.UTF-8",
+	LANG = "C"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+FALSE
